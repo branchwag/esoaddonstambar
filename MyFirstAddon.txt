@@ -1,0 +1,10 @@
+## Title: MyFirstAddon
+## Description: A test application to see if I can make an addon Version 1.0
+## Author: gwenval
+## APIVersion: 101040
+## OptionalDependsOn: LibStub
+## DependsOn: LibAddonMenu-2.0
+## SavedVariables: MyFirstAddonVariables
+
+MyFirstAddon.lua
+MyFirstAddon.xml

@@ -1,0 +1,32 @@
+<GuiXml> 
+   <Controls>
+   <TopLevelControl name="MyFirstAddonWindow" clampedToScreen="true" mouseEnabled="true" movable="true" hidden="false">	
+      <Dimensions x="300" y="50" />
+      <Anchor point="BOTTOMRIGHT" relativeTo="GuiRoot" relativePoint="CENTER" offsetX="900" offsetY="450"/>
+      <Controls>
+         <Backdrop name="$(parent)Backdrop" edgeColor="4D4847" layer="0" level="0" centerColor="6495ED" alpha="0.6" hidden="false">
+            <Dimensions x="300" y="50" />
+            <Anchor point="TOPLEFT"  relativeTo="$(parent)" relativePoint="TOPLEFT"/>
+            <Edge edgeSize="0" />
+         </Backdrop>
+         <!-- Our second backdrop, this is the copy you made of our original backdrop -->
+         <Backdrop name="$(parent)Border" edgeColor="000F08" layer="0" level="2" centerColor="00000000" alpha="1"  hidden="false">
+            <Dimensions x="300" y="50" />
+            <Anchor point="TOPLEFT"  relativeTo="$(parent)" relativePoint="TOPLEFT"/>
+            <Edge edgeSize="6" />
+         </Backdrop>
+ 
+         <StatusBar name="$(parent)StatusBar" layer="0" level="1" color="1C3738" alpha="1" hidden="false">
+            <Dimensions x="300" y="50" />
+            <Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="0" offsetY="0"/>
+            <Limits min="0" max="100" />
+         </StatusBar>
+ 
+         <Label name="$(parent)Label" font="ZoFontWinH1" color="ffffff" text="Status Bar" verticalAlignment="CENTER" horizontalAlignment="LEFT"  alpha="0.85">			
+            <Dimensions x="350" y="50" />
+            <Anchor point="BOTTOMLEFT"  relativeTo="$(parent)StatusBar" relativePoint="TOPLEFT" offsetX="0" offsetY="0"/>
+         </Label>
+      </Controls>
+   </TopLevelControl>
+   </Controls>
+</GuiXml>
